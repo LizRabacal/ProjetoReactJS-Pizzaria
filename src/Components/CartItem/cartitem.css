@@ -1,0 +1,33 @@
+.cartitem{
+display: flex;
+margin-top: 5%;
+gap: 5%;
+border-bottom: 2px dashed grey;
+}
+
+.qtd{
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+    gap: 5px;
+}
+
+.cartitem h2{
+    color: red;
+}
+.qtd button{
+    font-size: 20px;
+    background-color: transparent;
+    width: 25px;
+        height: 35px;
+
+    border-radius: 170%;
+    color: red;
+
+
+    margin: 5%;
+}
+
+.cartitem h4{
+    font-weight: 500;
+}

@@ -1,0 +1,21 @@
+.item{
+    margin:10%
+}
+
+.divimg{
+width: 100%;
+    height: 80%;
+       justify-content: center;
+
+}
+
+.divimg .img{
+    object-fit:contain;
+ 
+    
+}
+
+.price{
+color: rgb(229, 62, 62);
+font-weight: 800;
+}

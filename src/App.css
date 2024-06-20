@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: #F50501;
+  z-index: 100000;
+  transform-origin: 0%;
+}
+
+
+#nav{
+  position: absolute;
+z-index: 300;
+}
+
+#brasil{
+   -webkit-text-stroke-color: transparent !important; /* cor da borda */
+       padding: 0;
+  background-image: url("https://media2.giphy.com/media/bIqdxoOVJ2oak/200w.gif?cid=6c09b952jq2vy24qz0cdv1aw47qw3c6og5tc3frqvkgln41a&ep=v1_gifs_search&rid=200w.gif&ct=g") !important;
+    font-size: 85px ;
+font-weight: 700;
+  -webkit-background-clip: text !important;
+       
+  -webkit-text-fill-color: transparent !important;
+
+} 
+#brasil:before{
+ content: ' ';
+}
+
+.texto{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#h1{
+   font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 85px ;
+  color: "transparent" !important;
+  text-align: center;
+  text-wrap: nowrap;
+color: transparent;
+-webkit-text-stroke-width: 3px; 
+-webkit-text-stroke-color: #F50501; 
+  font-style: normal;
+}
+.Cards{
+  flex-direction: column;
+}
+.motion{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.part2{
+  
+  color: #F50501;
+    flex-direction: column !important;
+
+}
+
+#frete{
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.part1{
+  background: #F2B061;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transform: skew(30deg); 
+      -ms-transform: skew(30deg); 
+          transform: skew(30deg); 
+}
+
+#pizzaimg{
+    -webkit-transform: skew(-30deg); 
+      -ms-transform: skew(-30deg); 
+          transform: skew(-30deg); 
+          position: relative;
+          top: 25px;
+}
+
+#nav a{
+  font-weight: bolder;
+}
+
+.Cards{
+  color: #F50501;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner2{
+
+          background-color: rgb(37, 27, 27);
+            width: 80%;
+            position: relative;
+
+
+}
+
+.dentro{
+
+
+}
+
+.initialmenu{
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  padding: 5%;
+  border: 3px dashed #F50501;
+}
+.initialmenu h1{
+  text-align: center;
+  margin-bottom: 5%;
+  font-size: 55px;
+     font-family: "Anton", sans-serif;
+     color: transparent;
+-webkit-text-stroke-width: 2px; 
+-webkit-text-stroke-color: #F50501; 
+
+}
+
+#pizzamp{
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+
+}
+
+
+/*RESPONSIVIDADE*/
+
+
+@media screen and (max-width: 767px) {
+
+  .part1{
+    display: none !important;
+  }
+  #logo{
+    width: 20%;
+  }
+  .part2{
+    width: 100% !important;
+  }
+  .motion{
+  }
+
+
+
+  #h1{
+   font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-size: 45px ;
+  color: "transparent" !important;
+  text-align: center;
+  text-wrap: nowrap;
+
+  -webkit-text-stroke-width: 2px; /* largura da borda */
+  
+}
+#brasil{
+    font-size: 55px ;
+
+}
+#frete{
+  font-size: 17px;
+}
+}

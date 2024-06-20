@@ -1,0 +1,77 @@
+
+.container{
+/*   border: 4mm ridge rgba(211, 220, 50, .6);
+ */display: flex;
+    width: 90%;
+    margin-top: 10%;
+    padding: 2%;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.container1{
+    padding: 3%;
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid white;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.form{
+  border-radius: 5px;
+  margin: 2%;
+  padding: 3%;
+
+box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;width: 50%;
+background-color: white;
+border: none;
+}
+
+.form h1{
+  width: 100%;
+  font-size: 200%;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+
+}
+
+
+.containerzao{
+  display: flex;
+}
+
+.container1 .info{
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    margin-bottom: 6%;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+
+}
+
+
+.container1 .info svg{
+  font-size: 40px;
+  margin-right: 2%;
+}
+
+
+
+
+.beneficios{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    padding: 10%;
+    justify-content: center;
+}
+
