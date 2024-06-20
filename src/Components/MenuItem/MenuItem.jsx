@@ -14,7 +14,7 @@ const MenuItem = ({pizza}) => {
     const handleAddPizza = () =>{
         Swal.fire({
             title: "Deseja colocar produto no carrinho?",
-            icon: "info",
+            icon: "question",
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
             cancelButtonColor: "#d33",
