@@ -11,7 +11,7 @@ const InitialMenu = () => {
 
       {/* pratica iteraçao de lista */}
         <div className="simplegrid">
-        <SimpleGrid minChildWidth='420px' spacing='20px'>
+        <SimpleGrid minChildWidth='380px' spacing='20px'>
                   {pizzas.map(p => (
                     <Box key={p.id}> <MenuItem pizza={p} /> </Box>
                ) 
