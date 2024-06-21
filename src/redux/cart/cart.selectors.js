@@ -12,3 +12,4 @@ export const selectPizzasTotalPriceOfAll = (rootReducer) =>{
         0
     );
 };
+

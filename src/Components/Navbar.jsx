@@ -1,12 +1,14 @@
 import React from "react";
-import { Link, Box, Flex, Text, Button, Stack, Progress } from "@chakra-ui/react";
+import { Box, Flex, Text, Button, Stack, Progress } from "@chakra-ui/react";
 import { useTheme } from 'styled-components';
 import Telefone from "./Telefone";
-
+import { Link, animateScroll as scroll } from "react-scroll";
 import { useSelector } from "react-redux";
 import { selectPizzasCount } from '../redux/cart/cart.selectors';
 import { useDisclosure } from "@chakra-ui/react";
 import { FaCartShopping } from "react-icons/fa6";
+import { NavLink } from "react-router-dom";
+
 import Cart from "./Cart/Cart";
 
 
@@ -62,11 +64,11 @@ const MenuToggle = ({ toggle, isOpen }) => {
 
 const MenuItem = ({ children, isLast, to = "/", ...rest }) => {
     return (
-        <Link id='anav' to={to}>
+        <NavLink id='anav' to={to}>
             <Text display="block" {...rest}>
                 {children}
             </Text>
-        </Link>
+        </NavLink>
     );
 };
 
@@ -88,18 +90,31 @@ const MenuLinks = ({ isOpen }) => {
                 pt={[4, 4, 0, 0]}
             >
                 <MenuItem to="/">HOME</MenuItem>
-
-                <MenuItem to="/modalidades">MODALIDADES</MenuItem>
-
-                <MenuItem to="/modalidades">LOCALIZAÇÃO</MenuItem>
-
+                <Link
+                    activeClass="active"
+                    to="initialmenu"
+                    spy={true}
+                    smooth={true}
+                    offset={70}
+                    duration={800}>
+                <MenuItem >MENU</MenuItem>
+                </Link>
+                <MenuItem>
+                    <Link
+                        activeClass="active"
+                        to="section1"
+                        spy={false}
+                        smooth={true}
+                        offset={70}
+                        duration={1000}>LOCALIZAÇÃO</Link>
+                </MenuItem>
                 <MenuItem to="/modalidades">PIZZA</MenuItem>
 
-                <MenuItem to="/contato">      
-                <Button ref={btnRef} colorScheme='transparent' onClick={onOpen}>
-                        <FaCartShopping size={30} color="red" /> <h1 style={{fontSize: "20px", color: "red"}}>({pizzaCount})</h1>
-                </Button>
-                    <Cart isOpen={isopen2} onClose={onClose} btnRef={btnRef}/>
+                <MenuItem to="">
+                    <Button ref={btnRef} colorScheme='transparent' onClick={onOpen}>
+                        <FaCartShopping size={30} color="red" /> <h1 style={{ fontSize: "20px", color: "red" }}>({pizzaCount})</h1>
+                    </Button>
+                    <Cart isOpen={isopen2} onClose={onClose} btnRef={btnRef} />
                 </MenuItem>
 
 
