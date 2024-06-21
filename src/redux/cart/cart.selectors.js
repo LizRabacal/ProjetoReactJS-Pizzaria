@@ -12,4 +12,10 @@ export const selectPizzasTotalPriceOfAll = (rootReducer) =>{
         0
     );
 };
+export const selectPizzasFitness = (rootReducer) =>{
+    return rootReducer.cartReducer.pizzas.filter(p => p.type === "fitness");
+};
 
+export const selectPizzasTrad = (rootReducer) => {
+    return rootReducer.cartReducer.pizzas.filter(p => p.type == "tradicional");
+};

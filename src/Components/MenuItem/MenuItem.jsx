@@ -36,8 +36,11 @@ const MenuItem = ({pizza}) => {
         
       <>  
 
-          <Card maxW='sm' background="transparent" border='2px solid red'>
+          <Card maxW='sm' background="transparent" border='2px dashed #F29661'>
               <CardBody>
+                <div className="category">
+                    {pizza.type == "fitness" ? "Fitness" : "Tradicional"}
+                </div>
                   <Image
                       src= {pizza.urlImage}
                       alt='urlimg'

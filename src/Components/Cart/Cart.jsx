@@ -29,16 +29,17 @@ const Cart = ({ isOpen, onClose, btnRef }) => {
                 placement='right'
                 onClose={onClose}
                 finalFocusRef={btnRef}
+                size="sm"
 
             >
                 <DrawerOverlay />
-            <DrawerContent zIndex={30000} >
+                <DrawerContent zIndex={30000}>
                     <DrawerCloseButton />
                     <DrawerHeader>Carrinho</DrawerHeader>
 
                     <DrawerBody>
                         {pizzas.map(p => <CartItem pizza={p} />)}
-                        <h1 style={{ fontWeight: "900" }}>Total: {pizzaTotalPrice.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</h1>
+                        <h1 style={{ fontWFeight: "900", fontSize: "26px" }}>Total: {pizzaTotalPrice.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</h1>
 
                     </DrawerBody>
 

@@ -117,7 +117,7 @@ color: transparent;
   flex-direction: column;
   margin: 5%;
   padding: 5%;
-  border: 3px dashed #F50501;
+  border: 3px solid #F50501;
 }
 .initialmenu h1{
   text-align: center;
@@ -176,3 +176,10 @@ color: transparent;
   font-size: 17px;
 }
 }
+    .fitfilter {
+        background-color: green;
+    }
+
+    .fit{
+        background-color: red;
+    }

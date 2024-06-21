@@ -1,6 +1,9 @@
 .cartitem{
 display: flex;
 margin-top: 5%;
+justify-self: center;
+align-items: center;
+
 gap: 5%;
 border-bottom: 2px dashed grey;
 }
