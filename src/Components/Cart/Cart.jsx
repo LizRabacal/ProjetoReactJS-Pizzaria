@@ -12,6 +12,7 @@ import {
 import { useSelector } from "react-redux";
 import { selectPizzasTotalPriceOfAll } from '../../redux/cart/cart.selectors';
 import CartItem from '../CartItem/CartItem';
+import { FaCartShopping } from "react-icons/fa6";
 
 
 
@@ -19,7 +20,6 @@ import CartItem from '../CartItem/CartItem';
 const Cart = ({ isOpen, onClose, btnRef }) => {
     const pizzaTotalPrice = useSelector(selectPizzasTotalPriceOfAll);
     const { pizzas } = useSelector(rootReducer => rootReducer.cartReducer);
-    console.log(pizzas)
 
     return (
         <>
@@ -33,9 +33,9 @@ const Cart = ({ isOpen, onClose, btnRef }) => {
 
             >
                 <DrawerOverlay />
-                <DrawerContent zIndex={30000}>
+                <DrawerContent zIndex={30000} background="#ffe9ba">
                     <DrawerCloseButton />
-                    <DrawerHeader>Carrinho</DrawerHeader>
+                    <DrawerHeader display="flex" alignItems="center"><FaCartShopping size={25}/>Carrinho   </DrawerHeader>
 
                     <DrawerBody>
                         {pizzas.map(p => <CartItem pizza={p} />)}

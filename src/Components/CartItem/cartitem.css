@@ -3,6 +3,7 @@ display: flex;
 margin-top: 5%;
 justify-self: center;
 align-items: center;
+font-size: 20px;
 
 gap: 5%;
 border-bottom: 2px dashed grey;
@@ -23,8 +24,8 @@ border-bottom: 2px dashed grey;
     background-color: transparent;
     width: 25px;
         height: 35px;
+        
 
-    border-radius: 170%;
     color: red;
 
 
@@ -33,4 +34,13 @@ border-bottom: 2px dashed grey;
 
 .cartitem h4{
     font-weight: 500;
+}
+
+.cartitem button:hover{
+    background-color: rgba(255, 255, 255, 1);
+    }
+    
+    #nav button:hover{
+    background-color: rgba(255, 255, 255, 1);
+
 }

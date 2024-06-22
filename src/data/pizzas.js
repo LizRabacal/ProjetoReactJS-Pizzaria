@@ -9,7 +9,7 @@ const pizzas = [
     },
     {
         id: "2",
-        urlImage: "/pizzafit.png",
+        urlImage: "/pmarg (1).png",
         name: "Pizza Margherita",
         price: 35.00,
         desc: "Clássica pizza italiana com molho de tomate, mussarela e manjericão fresco.",
@@ -17,7 +17,7 @@ const pizzas = [
     },
     {
         id: "3",
-        urlImage: "/pizzafit.png",
+        urlImage: "/pcalabresa.png",
         name: "Pizza Pepperoni",
         price: 45.00,
         desc: "Pizza tradicional com fatias generosas de pepperoni e queijo derretido.",
@@ -25,7 +25,7 @@ const pizzas = [
     },
     {
         id: "4",
-        urlImage: "/pizzafit.png",
+        urlImage: "/pfrangoc.png",
         name: "Pizza de Frango com Catupiry",
         price: 50.00,
         desc: "Saborosa pizza de frango desfiado com cremoso catupiry.",
@@ -33,7 +33,7 @@ const pizzas = [
     },
     {
         id: "5",
-        urlImage: "/pizzafit.png",
+        urlImage: "/pcala.png",
         name: "Pizza Calabresa",
         price: 42.00,
         desc: "Pizza com fatias de calabresa, cebola e azeitonas pretas.",
@@ -41,7 +41,7 @@ const pizzas = [
     },
     {
         id: "6",
-        urlImage: "/pizzafit.png",
+        urlImage: "/p4queijos.png",
         name: "Pizza Quatro Queijos",
         price: 55.00,
         desc: "Pizza com uma combinação perfeita de quatro tipos de queijo: mussarela, provolone, gorgonzola e parmesão.",
@@ -49,7 +49,7 @@ const pizzas = [
     },
     {
         id: "7",
-        urlImage: "/pizzafit.png",
+        urlImage: "/pportuguesa.png",
         name: "Pizza Portuguesa",
         price: 48.00,
         desc: "Pizza tradicional portuguesa com presunto, ovo, cebola, azeitonas e pimentão.",
@@ -65,7 +65,7 @@ const pizzas = [
     },
     {
         id: "9",
-        urlImage: "/pizzafit.png",
+        urlImage: "/phavaiana.png",
         name: "Pizza Havaiana",
         price: 45.00,
         desc: "Pizza doce e salgada com abacaxi e presunto.",
@@ -73,7 +73,7 @@ const pizzas = [
     },
     {
         id: "10",
-        urlImage: "/pizzafit.png",
+        urlImage: "/pmilho.png",
         name: "Pizza de Milho",
         price: 43.00,
         desc: "Pizza com cobertura de milho verde e queijo.",
@@ -81,7 +81,7 @@ const pizzas = [
     },
     {
         id: "11",
-        urlImage: "/pizzafit.png",
+        urlImage: "/patum.png",
         name: "Pizza de Atum",
         price: 49.00,
         desc: "Pizza com atum, cebola e azeitonas.",

@@ -39,7 +39,7 @@ const InitialMenu = () => {
         <h3>{fitFilter}</h3>
         <button className={fitFilter ? "fitfilter" : "fit"} onClick={handleFitnessFilter}>Fitness</button>
         <button className={tradFilter ? "tradfilter" : "trad"} onClick={handleTradFilter}>Tradicionais</button>
-        {(fitFilter || tradFilter) && (<button onClick={handleTradClear} style={{ background: "#F29661" }}>X Limpar</button>)}
+        {(fitFilter || tradFilter) && (<button onClick={handleTradClear} style={{ background: "#F29661", border: "2px solid #F29661", color: "white" }}>X Limpar</button>)}
        
       </div>
 

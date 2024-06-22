@@ -1,19 +1,23 @@
 .button{
     
     button{
-      color: white;
+      color: black;
       margin-right: 2%;
-      padding: 0.5%;
+      padding: 0.7%;
+      font-weight: 800;
+      border:2px solid #F50501;
       border-radius: 5px;
       background-color: #F2C361;
     }
 
    .fitfilter {
        background-color: #F50501;
+       color: white;
        }
        
        .tradfilter{
-       background-color: #F50501;
+         background-color: #F50501;
+         color: white;
 
    }
    button:hover{
