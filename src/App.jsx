@@ -10,6 +10,7 @@ import { Provider } from 'react-redux';
 import store from './redux/store';
 
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import Register from './Pages/Register';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Routes>
             <Route index element={<LandingPage />} />
             <Route path='/Agenda' element={<LandingPage />} />
+            <Route path='/Register' element={<Register />} />
           </Routes>
 
 

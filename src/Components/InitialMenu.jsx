@@ -13,7 +13,10 @@ const InitialMenu = () => {
 
   const [tradFilter, setTradFilter] = useState(false);
 
+  
   const pizzasFit = useSelector(selectPizzasFitness);
+
+
 
   const handleFitnessFilter = () => {
     setPizzasShown(pizzas.filter(p => p.type === "fitness"));

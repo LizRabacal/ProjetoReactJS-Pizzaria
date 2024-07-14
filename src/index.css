@@ -3,10 +3,17 @@
       font-family: "Roboto", sans-serif;
 
 
+      
 }
 
 
 #root{
       background-color: #ffe9ba;
+      height: 100%;
+}
+
+body{
+      height: 100%;
+      
 }
 

@@ -19,6 +19,8 @@ import { FaCartShopping } from "react-icons/fa6";
 
 const Cart = ({ isOpen, onClose, btnRef }) => {
     const pizzaTotalPrice = useSelector(selectPizzasTotalPriceOfAll);
+
+    
     const { pizzas } = useSelector(rootReducer => rootReducer.cartReducer);
 
     return (

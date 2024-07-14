@@ -1,0 +1,11 @@
+.register{
+    position: absolute;
+    height: 600px;
+    flex-direction: column;
+    width: 100%;
+    background-color: #ffe9ba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
